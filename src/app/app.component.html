@@ -1,0 +1,13 @@
+<div class="bandeau">
+  <h1>Plus ou moins</h1>
+  <p><i>Le jeu complètement déjanté !</i></p>
+</div>
+<div class="contenu">
+  <button class="bouton" (click)="moins(5)">--</button>
+  <button class="bouton" (click)="moins(1)">-</button>
+  {{nombre}}
+  <button class="bouton" (click)="plus(1)">+</button>
+  <button class="bouton" (click)="plus(5)">++</button>
+
+<p *ngIf="nombre===13">OUI</p>
+</div>
