@@ -9,7 +9,6 @@ export class AppComponent {
   title = 'jeuduplusoumoins';
   nombre = 1;
   valeur = Math.floor((Math.random() * 100) + 1);
-  string 
   plus(chiffre: number) {
     this.nombre += chiffre;
   }
@@ -25,13 +24,13 @@ export class AppComponent {
 
   }
   valider() {
-    if (this.nombre == this.valeur) {
-      alert("Vous avez gagné !");
+    if (this.nombre === this.valeur) {
+      alert('Vous avez gagné !');
     } else {
       if (this.nombre < this.valeur) {
-        alert("Plus haut");
+        alert('Plus haut');
       } else {
-        alert("Plus bas");
+        alert('Plus bas');
       }
     }
   }
